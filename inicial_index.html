@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Biblioteca</title>
+    <link rel="stylesheet" href="inicial_style.css">
+</head>
+<body>
+
+<header>
+    <h1>Biblioteca Municipal - Cadastro de Usuários</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="inicial_index.html">Início</a></li>
+        <li><a href="servidor.php">Exibir Dados</a></li>
+        <li><a href="desenvolvedores_index.html">Desenvolvedores</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Cadastro de Usuário</h2>
+    <form action="servidor.php" method="post">
+        <div>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+        </div>
+        <div>
+            <label>Gênero:</label>
+            <input type="radio" id="genero_masculino" name="genero" value="Masculino">
+            <label for="genero_masculino">Masculino</label>
+            <input type="radio" id="genero_feminino" name="genero" value="Feminino">
+            <label for="genero_feminino">Feminino</label>
+            <input type="radio" id="genero_outro" name="genero" value="Outro">
+            <label for="genero_outro">Outro</label>
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+        </div>
+        <div>
+            <label for="endereco">Endereço:</label>
+            <textarea id="endereco" name="endereco"></textarea>
+        </div>
+        <div>
+            <label for="foto">Foto de Perfil:</label>
+            <input type="file" id="foto" name="foto">
+        </div>
+        <div>
+            <label>Preferência de Comunicação:</label>
+            <input type="checkbox" id="pref_email" name="preferencia[]" value="E-mail">
+            <label for="pref_email">E-mail</label>
+            <input type="checkbox" id="pref_telefone" name="preferencia[]" value="Telefone">
+            <label for="pref_telefone">Telefone</label>
+        </div>
+        <div>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</main>
+
+<footer>
+    <p>IFRN Campus Santa Cruz - Trabalho de Autoria Web</p>
+    <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+    <p>Grupo: [Nomes dos Alunos]</p>
+</footer>
+
+</body>
+</html>
