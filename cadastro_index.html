@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldeia - Cadastro</title>
+    <link rel="stylesheet" href="cadastro_style.css">
+</head>
+<body>
+
+<header>
+    <h1>Aldeia dos Formulários Encantados - Cadastro</h1>
+    <h4>Antes de você entrar na aldeia encantada, precisamos de algumas informações</h4>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="login_index.html">Login</a></li>
+        <li><a href="cadastro_index.html">Cadastro</a></li>
+        <li><a href="servidor.php">Servidor</a></li>
+        <li><a href="desenvolvedores_index.html">Desenvolvedores</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Cadastro de Feiticeiro Web</h2>
+    <form action="servidor.php" method="post">
+        <div>
+            <label for="nome">Nome de feiticeiro web:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="data_despertar">Data do despertar:</label>
+            <input type="date" id="data_despertar" name="data_despertar" required>
+        </div>
+        <div>
+            <label>Afinidades:</label><br>
+            <input type="checkbox" id="afinidade_javafonico" name="afinidade[]" value="Feitiço Javafônico">
+            <label for="afinidade_javafonico">Feitiço Javafônico</label><br>
+            <input type="checkbox" id="afinidade_objecionalismo" name="afinidade[]" value="Encantamento de Objetificação">
+            <label for="afinidade_objecionalismo">Encantamento de Objetificação</label><br>
+            <input type="checkbox" id="afinidade_maracacao_arcana" name="afinidade[]" value="Feitiço de Marcação Arcana">
+            <label for="afinidade_maracacao_arcana">Feitiço de Marcação Arcana</label><br>
+            <input type="checkbox" id="afinidade_encanto_estilistico" name="afinidade[]" value="Encanto Estilístico">
+            <label for="afinidade_encanto_estilistico">Encanto Estilístico</label><br>
+            <input type="checkbox" id="afinidade_processamento_magico" name="afinidade[]" value="Feitiço de Processamento Mágico">
+            <label for="afinidade_processamento_magico">Feitiço de Processamento Mágico</label><br>
+            <input type="checkbox" id="afinidade_interativa" name="afinidade[]" value="Feitiçaria Interativa">
+            <label for="afinidade_interativa">Feitiçaria Interativa</label><br>
+            <input type="checkbox" id="afinidade_reacoes_espontaneas" name="afinidade[]" value="Encantamento de Reações Espontâneas">
+            <label for="afinidade_reacoes_espontaneas">Encantamento de Reações Espontâneas</label><br>
+        </div>
+        <div>
+            <label for="email">Enchantment-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="palavras_magicas">Palavras mágicas:</label>
+            <input type="password" id="palavras_magicas" name="palavras_magicas" required>
+        </div>
+        <div>
+            <label for="concha_oraculo">Concha do Oráculo:</label>
+            <input type="tel" id="concha_oraculo" name="concha_oraculo">
+        </div>
+        <div>
+            <label for="ordem">Ordem:</label>
+            <textarea id="ordem" name="ordem"></textarea>
+        </div>
+        <div>
+            <label for="retrato">Retrato da alma:</label>
+            <input type="file" id="retrato" name="retrato">
+        </div>
+        <div>
+            <label>Portal de comunicação:</label>
+            <input type="checkbox" id="pref_email" name="preferencia[]" value="Enchantment-mail">
+            <label for="pref_email">Enchantment-mail</label>
+            <input type="checkbox" id="pref_concha" name="preferencia[]" value="Concha do Oráculo">
+            <label for="pref_concha">Concha do Oráculo</label>
+        </div>
+        <div>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</main>
+
+<footer>
+    <p>IFRN Campus Santa Cruz - Trabalho de Autoria Web</p>
+    <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+    <p>Grupo: Alcides Bezerra Costa Neto e Giovana Borges de Medeiros Azevedo de Lima</p>
+</footer>
+
+</body>
+</html>
